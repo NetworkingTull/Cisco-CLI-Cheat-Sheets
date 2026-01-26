@@ -1,5 +1,3 @@
-# VLAN Cheat Sheet
-**VLAN Cheat Sheet**
 
 
 -AccessPort-
@@ -30,6 +28,16 @@ interface g0/0.3
 encapsulation dot1q 30
 ip address 10.0.0.190 255.255.255.192
 
+-CreateVLAN-
+vlan 10
+name SALES
+vlan 20
+name HR
+do show vlan brief
+
+-DeleteVLAN-
+no vlan 20
+do show vlan
 
 
 
@@ -51,14 +59,7 @@ ip address 10.0.0.190 255.255.255.192
 
 
 
-**At the bottom of this README, I have included a copy-and-paste table from ChatGPT.
-I’m not proud to copy AI content to GitHub, but I’ve found this table incredibly 
-useful. It helped me overcome the overwhelming feeling of the CLI, which I once 
-read can feel like “casting spells” and at the beginning it most deifinitely did.
-Including it here in case it helps others feel that the cli is not just limitless 
-brain fog and there is a begining and end too it**
 
-*ChatGPT Sourced Table*
  Modes:
 #   >  User Exec Mode
 #   #  Privileged Exec Mode
