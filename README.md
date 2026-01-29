@@ -35,6 +35,11 @@ vlan 20
 name HR
 do show vlan brief
 
+--NativeVLAN-
+interface g0/2
+switchport trunk native vlan 99
+do show interface trunk
+
 -DeleteVLAN-
 no vlan 20
 do show vlan
