@@ -44,6 +44,12 @@ do show interface trunk
 no vlan 20
 do show vlan
 
+-SVI-
+ip routing
+interface vlan 10
+ip address 10.0.10.1 255.255.255.0
+no shutdown
+do show ip interface brief
 
 
 
